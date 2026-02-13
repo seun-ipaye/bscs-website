@@ -39,11 +39,7 @@ function Home() {
   return (
     <div style={styles.page}>
       <nav style={styles.navbar}>
-        <img
-          src="src/assets/removedbg_log.png"
-          alt="BSCS Logo"
-          style={styles.logo}
-        />
+        <img src="/removedbg_log.png" alt="BSCS Logo" style={styles.logo} />
 
         <div style={styles.navLinks}>
           <span style={styles.link}>About</span>
