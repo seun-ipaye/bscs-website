@@ -8,13 +8,21 @@ body,
   margin: 0;
   padding: 0;
   min-height: 100%;
+  max-width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   background: #ffffff;
   color: #111111;
 }
 
-html {
+html,
+body {
   overflow-x: hidden;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
 }
 
 
