@@ -1,8 +1,13 @@
 import "./UpcomingEvents.css";
 
-//Update this regularly with new events Format: Year-Month-Day, title, location
-const EVENTS = [
-  { date: "2026-09-10", title: "Back To School", location: "University of Windsor" },
+//Update this regularly with new events. Format: Year-Month-Day, title, location, signupUrl (if we have one)
+export const EVENTS = [
+  { date: "2026-09-10", 
+    title: "Back To School", 
+    location: "University of Windsor",
+    signupUrl: null,
+  },
+  
 ];
 
 // This component displays the next 3 upcoming events in a sidebar on the Events page
@@ -17,6 +22,8 @@ export default function UpcomingEvents() {
         })
     .filter(e => e.dateObj >= today)
     .sort((a, b) => a.dateObj - b.dateObj);
+
+    
 
     // Only show the next 3 upcoming events if we have any
   return (

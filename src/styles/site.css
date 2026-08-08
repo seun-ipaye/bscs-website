@@ -8,13 +8,21 @@ body,
   margin: 0;
   padding: 0;
   min-height: 100%;
+  max-width: 100%;
   font-family: Arial, Helvetica, sans-serif;
   background: #ffffff;
   color: #111111;
 }
 
-html {
+html,
+body {
   overflow-x: hidden;
+}
+
+img,
+svg {
+  max-width: 100%;
+  display: block;
 }
 
 
@@ -123,7 +131,7 @@ a {
   width: 100%;
   padding: 5rem 2rem;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
   gap: 3rem;
   align-items: center;
 }
@@ -275,7 +283,7 @@ a {
   background: #0d1526;
   padding: 5rem 2rem;
   display: grid;
-  grid-template-columns: 0.9fr 1.1fr;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
   gap: 3rem;
   align-items: center;
 }
@@ -328,7 +336,7 @@ a {
   width: 100%;
   padding: 0 2rem 5rem;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
@@ -340,6 +348,7 @@ a {
   border-radius: 20px;
   padding: 1.5rem;
   background: #ffffff;
+  overflow-wrap: break-word;
 }
 
 .preview-card h2,
@@ -387,7 +396,7 @@ a {
 .content-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
@@ -415,7 +424,7 @@ a {
   border-radius: 20px;
   padding: 2.5rem;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 2rem;
   align-items: center;
   box-shadow: 0 20px 40px rgba(13, 21, 38, 0.25);
@@ -442,7 +451,7 @@ a {
 .events-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
@@ -497,7 +506,7 @@ a {
 .team-members-grid {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 1.5rem;
 }
 
@@ -519,7 +528,7 @@ a {
   .content-grid,
   .events-grid,
   .involved-section {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   
    .page-header-row {
@@ -532,7 +541,7 @@ a {
   }
 
   .team-members-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: minmax(0, 1fr);
   }
 
   .about-hero {
@@ -549,7 +558,7 @@ a {
     right: auto;
     bottom: auto;
     margin-top: 1.5rem;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     gap: 1rem;
     padding: 1.75rem;
   }
