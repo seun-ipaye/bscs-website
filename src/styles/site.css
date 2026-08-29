@@ -386,6 +386,40 @@ a {
   margin-bottom: 3rem;
 }
 
+/* LEGAL / POLICY PAGES */
+.legal-content {
+  max-width: 760px;
+  color: #333333;
+  line-height: 1.7;
+}
+
+.legal-content h2 {
+  margin: 2.5rem 0 1rem;
+  font-size: 1.4rem;
+  color: #111111;
+}
+
+.legal-content h2:first-child {
+  margin-top: 0;
+}
+
+.legal-content p {
+  margin: 0 0 1.25rem;
+}
+
+.legal-content ul {
+  margin: 0 0 1.25rem;
+  padding-left: 1.25rem;
+}
+
+.legal-content li {
+  margin-bottom: 0.75rem;
+}
+
+.legal-content a {
+  text-decoration: underline;
+}
+
 .page-header-row {
   display: flex;
   justify-content: space-between;
