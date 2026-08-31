@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const TEAM_MEMBERS = [
-  { role: "Co-President", name: "Ewa Olakunle" },
+  { role: "Co-President", name: "Ewaoluwa Olakunle" },
   { role: "Co-President", name: "Seun Samuel-Ipaye" },
   { role: "Vice President", name: "Sura Gaafar" },
   { role: "Events Lead", name: "Adedeji Adeboyejo" },
@@ -12,7 +12,7 @@ const TEAM_MEMBERS = [
   { role: "Outreach Lead", name: "Nifemi Koleosho" },
   { role: "Strategy Lead", name: "Edima Essien" },
   { role: "Secretary", name: "Iyanuoluwa Adegboyega" },
-  { role: "Head of Marketing and Communication", name: "Ogheneovo" },
+  { role: "Head of Marketing and Communication", name: "Ovo Akporeha" },
 ];
 
 function About() {
@@ -78,7 +78,7 @@ function About() {
 
         <div className="page-header team-header">
           <p className="eyebrow">Team</p>
-          <h1>Meet the Team</h1>
+          <h1>Founding members</h1>
           <p>
             The students working behind the scenes to build and grow BSCS.
           </p>
