@@ -1,31 +1,58 @@
 import "./UpcomingEvents.css";
 
-//Update this regularly with new events. Format: Year-Month-Day, title, location, signupUrl (if we have one)
+// For single-day events: just set date, leave endDate null
+// For multi-day events: set both date and endDate
+// signupUrl: add when available, null if not yet
 export const EVENTS = [
-  { date: "2026-09-10", 
-    title: "Back To School", 
+  { 
+    date: "2026-09-10", 
+    endDate: "2026-09-11",
+    title: "Fall Welcome Week Meetup", 
     location: "University of Windsor",
     signupUrl: null,
   },
-  
+  { 
+    date: "2026-09-13", 
+    endDate: "2026-10-19",
+    title: "BSCS 101: TBD",
+    location: "Unibersity of Windsor",
+    signupUrl: null,
+  },
+  { 
+    date: "2026-09-20", 
+    endDate: "2026-09-26",
+    title: "Drop-in Hangout",
+    location: "University of Windsor",
+    signupUrl: null,
+  },
+  { 
+    date: "2026-09-27", 
+    endDate: "2026-10-03",
+    title: "Trivia night",
+    location: "University of Windsor",
+    signupUrl: null,
+  },
 ];
 
-// This component displays the next 3 upcoming events in a sidebar on the Events page
+function parseDate(str) {
+  const [year, month, day] = str.split("-").map(Number);
+  return new Date(year, month - 1, day);
+}
+
 export default function UpcomingEvents() {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
 
   const upcoming = EVENTS
-    .map(e => {
-        const [year, month, day] = e.date.split("-").map(Number);
-        return { ...e, dateObj: new Date(year, month - 1, day) };
-        })
-    .filter(e => e.dateObj >= today)
-    .sort((a, b) => a.dateObj - b.dateObj);
+    .map(e => ({
+      ...e,
+      dateObj: parseDate(e.date),
+      endDateObj: e.endDate ? parseDate(e.endDate) : parseDate(e.date),
+    }))
+    .filter(e => e.endDateObj >= today)
+    .sort((a, b) => a.dateObj - b.dateObj)
+    .slice(0, 3);
 
-    
-
-    // Only show the next 3 upcoming events if we have any
   return (
     <div className="upcoming-events">
       <h3 className="upcoming-events__label">UPCOMING EVENTS</h3>
@@ -35,14 +62,27 @@ export default function UpcomingEvents() {
       ) : (
         <div className="upcoming-events__list">
           {upcoming.map((e, i) => {
-            const d = e.dateObj;
-            const month = d.toLocaleString("default", { month: "short" }).toUpperCase();
-            const day = d.getDate();
+            const start = e.dateObj;
+            const end = e.endDateObj;
+            const startMonth = start.toLocaleString("default", { month: "short" }).toUpperCase();
+            const endMonth = end.toLocaleString("default", { month: "short" }).toUpperCase();
+            const startDay = start.getDate();
+            const endDay = end.getDate();
+
+            // Build badge label
+            const sameDay = startDay === endDay && startMonth === endMonth;
+            const sameMonth = startMonth === endMonth;
+            const dayLabel = sameDay
+              ? `${startDay}`
+              : sameMonth
+              ? `${startDay}–${endDay}`
+              : `${startDay}–${endDay}`;
+
             return (
               <div key={i} className="upcoming-events__item">
                 <div className="upcoming-events__badge">
-                  <div className="upcoming-events__month">{month}</div>
-                  <div className="upcoming-events__day">{day}</div>
+                  <div className="upcoming-events__month">{startMonth}</div>
+                  <div className="upcoming-events__day">{dayLabel}</div>
                 </div>
                 <div>
                   <div className="upcoming-events__title">{e.title}</div>
@@ -56,4 +96,3 @@ export default function UpcomingEvents() {
     </div>
   );
 }
-

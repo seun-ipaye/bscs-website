@@ -33,6 +33,7 @@
 
 .upcoming-events__badge {
   min-width: 48px;
+  max-width: 64px;
   text-align: center;
   background: #f5f5f5;
   border-radius: 10px;
@@ -47,9 +48,10 @@
 }
 
 .upcoming-events__day {
-  font-size: 1.3rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #1a1a1a;
+  white-space: nowrap;
 }
 
 .upcoming-events__title {
