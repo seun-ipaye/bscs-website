@@ -12,7 +12,7 @@ const TEAM_MEMBERS = [
   { role: "Outreach Lead", name: "Nifemi Koleosho" },
   { role: "Strategy Lead", name: "Edima Essien" },
   { role: "Secretary", name: "Iyanuoluwa Adegboyega" },
-  { role: "Head of Marketing and Communication", name: "Esaaba" },
+  { role: "Head of Marketing and Communication", name: "Ovo Akporeha" },
 ];
 
 function About() {
