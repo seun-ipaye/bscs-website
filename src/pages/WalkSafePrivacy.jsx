@@ -124,14 +124,6 @@ function WalkSafePrivacy() {
             walk records.
           </p>
 
-          <h2>The Panic / Emergency Button</h2>
-          <p>
-            WalkSafe includes a button that calls [[ CAMPUS SECURITY /
-            WALKSAFE EXTENSION PHONE NUMBER — GET FROM JARED ]] directly.
-            Using it places a normal phone call — WalkSafe does not record or
-            transmit anything beyond initiating that call.
-          </p>
-
           <h2>Location Permission</h2>
           <p>
             WalkSafe asks for your device&apos;s location only when you
