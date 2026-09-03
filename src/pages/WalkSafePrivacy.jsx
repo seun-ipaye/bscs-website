@@ -11,16 +11,20 @@ function WalkSafePrivacy() {
           <p className="eyebrow">WalkSafe</p>
           <h1>WalkSafe Privacy Policy</h1>
           <p>
-            <em>Last updated: August 29, 2026</em>
+            <em>Last updated: September 3, 2026</em>
           </p>
         </div>
 
         <div className="legal-content">
           <p>
-            WalkSafe is a safety-escort app operated by BSCS (Black Students
-            in Computer Science) at the University of Windsor (&quot;we&quot;,
-            &quot;us&quot;). This policy explains what information WalkSafe
-            collects, how it&apos;s used, and who can see it.
+            WalkSafe is a safety-escort app built and operated by BSCS
+            (Black Students in Computer Science) at the University of
+            Windsor, for the University of Windsor Students&apos; Alliance
+            (UWSA) WalkSafe program (&quot;we&quot;, &quot;us&quot;). BSCS
+            builds, operates, and administers WalkSafe — UWSA does not have
+            access to any of the information described in this policy. This
+            policy explains what information WalkSafe collects, how
+            it&apos;s used, and who can see it.
           </p>
 
           <h2>Information We Collect</h2>
@@ -93,7 +97,12 @@ function WalkSafePrivacy() {
 
           <p>
             We do not sell or share this information with third parties, and
-            we do not use it for advertising.
+            we do not use it for advertising. The one exception is push
+            notifications themselves: your device&apos;s push token is
+            passed to Apple (APNs) or Google (FCM) — whichever your phone
+            uses — solely to deliver that notification. These are the
+            standard infrastructure every app uses to send notifications,
+            not an advertising or data partner.
           </p>
 
           <h2>Who Can See What</h2>
@@ -112,16 +121,36 @@ function WalkSafePrivacy() {
               Other students and other volunteers cannot see a student&apos;s
               phone number or personal details.
             </li>
+            <li>
+              Only BSCS has access to WalkSafe&apos;s data. UWSA does not
+              have access to any student or volunteer information, even
+              though the program runs on their behalf.
+            </li>
           </ul>
 
           <h2>Data Retention</h2>
           <p>
-            We do not delete completed, cancelled, or timed-out walk
-            requests, or deactivated staff accounts — we keep them so that
-            safety and usage records remain available for the
-            organization&apos;s own review. Deactivating a staff account
-            removes their access; it does not delete their name from past
-            walk records.
+            We keep completed, cancelled, and timed-out walk requests so
+            that safety and usage records remain available for the
+            organization&apos;s own review.
+          </p>
+          <p>
+            If you&apos;re a current or former volunteer or coordinator, you
+            can contact us to have your personal details removed. Once
+            processed, your name and phone number are cleared everywhere in
+            the app — including from every past completed walk — and your
+            email is deleted from our systems entirely. The account record
+            itself stays in place (marked as removed) so that usage and
+            safety history remains reconstructable for the
+            organization&apos;s review; it&apos;s your personal details that
+            are gone, not the record that a walk happened.
+          </p>
+
+          <h2>The Panic / Emergency Button</h2>
+          <p>
+            WalkSafe includes a button that calls the WalkSafe extension
+            directly. Using it places a normal phone call — WalkSafe does
+            not record or transmit anything beyond initiating that call.
           </p>
 
           <h2>Location Permission</h2>
@@ -134,7 +163,8 @@ function WalkSafePrivacy() {
 
           <h2>Contact</h2>
           <p>
-            Questions about this policy or your data can be sent to{" "}
+            Questions about this policy or your data — including requests to
+            remove your personal information — can be sent to{" "}
             <a href="mailto:bscs@uwindsor.ca">bscs@uwindsor.ca</a>.
           </p>
         </div>
