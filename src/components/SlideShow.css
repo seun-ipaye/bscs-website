@@ -18,6 +18,8 @@
   overflow: hidden;
   transition: opacity 0.3s ease;
   height: 600px; 
+  transition: opacity 0.15s ease-in-out;
+  opacity: 1;
 }
 
 .slideshow__card--fading {
@@ -39,6 +41,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+  transition: none;
 }
 
 .slideshow__placeholder {

@@ -31,15 +31,24 @@ const slides = [
 ];
 
 export default function EventSlideshow() {
+  useEffect(() => {
+  slides.forEach(slide => {
+    if (slide.image) {
+      const img = new Image();
+      img.src = slide.image;
+    }
+  });
+}, []);
+
   const [current, setCurrent] = useState(0);
-  const [fading, setFading] = useState(false);
+  const [visible, setVisible] = useState(true);
 
   const goTo = (index) => {
-    setFading(true);
+    setVisible(false);
     setTimeout(() => {
       setCurrent((index + slides.length) % slides.length);
-      setFading(false);
-    }, 300);
+      setVisible(true);
+    }, 150);
   };
 
   useEffect(() => {
@@ -53,7 +62,7 @@ export default function EventSlideshow() {
     <div className="slideshow">
       <h3 className="slideshow__label">PAST EVENTS</h3>
 
-      <div className={`slideshow__card ${fading ? "slideshow__card--fading" : ""}`}>
+        <div className={`slideshow__card ${!visible ? "slideshow__card--fading" : ""}`}>
 
         {/* Photo */}
         <div className="slideshow__photo">
