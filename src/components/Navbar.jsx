@@ -8,6 +8,7 @@ function Navbar({ transparent = false }) {
     <header className={`navbar${transparent ? " navbar-transparent" : ""}`}>
       <div className="navbar-inner">
         <Link to="/" className="logo" onClick={() => setIsOpen(false)}>
+          <img className="logo-mark" src="/BSCS%20Logo.svg" alt="" />
           BSCS
         </Link>
 
@@ -24,6 +25,9 @@ function Navbar({ transparent = false }) {
         </button>
 
         <nav className={`nav-links ${isOpen ? "open" : ""}`}>
+          <Link to="/" onClick={() => setIsOpen(false)}>
+            Home
+          </Link>
           <Link to="/about" onClick={() => setIsOpen(false)}>
             About
           </Link>
