@@ -4,20 +4,24 @@ import Footer from "../components/Footer";
 
 const WHY_JOIN = [
   {
-    title: "Community",
-    text: "Placeholder benefit point 1 — add your benefit text here.",
+    title: "Be curious",
+    text: "Placeholder benefit point",
+    image: "/hero/hero01.JPG",
   },
   {
-    title: "Mentorship",
-    text: "Placeholder benefit point 2 — add your benefit text here.",
+    title: "Be active",
+    text: "Placeholder benefit point 2",
+    image: "/hero/hero01.JPG",
   },
   {
-    title: "Opportunities",
-    text: "Placeholder benefit point 3 — add your benefit text here.",
+    title: "Say yes to opportunities",
+    text: "Placeholder benefit point 3",
+    image: "/hero/hero01.JPG",
   },
   {
-    title: "Belonging",
-    text: "Placeholder benefit point 4 — add your benefit text here.",
+    title: "Bring a friend",
+    text: "If you like what we do and want to grow our community, bring a friend with you for our next event!",
+    image: "/hero/hero01.JPG",
   },
 ];
 
@@ -42,29 +46,32 @@ function BecomeMember() {
               Join BSCS (Black Students in <span>Computer Science</span>)
             </h1>
             <p className="membership-subheading">
-              BSCS is a student community built to help Black students in
+              BSCS is a student community and social network built to help Black students in
               computer science connect, grow, and thrive at the University of
               Windsor.
             </p>
-            <div
+            <img
               className="membership-hero__visual"
-              aria-hidden="true"
+              src="/hero/hero01.JPG"
+              alt="BSCS students together"
             />
           </div>
         </section>
 
         <section className="membership-section" aria-labelledby="why-join-heading">
           <div className="section-heading">
-            <p className="eyebrow">Why Join</p>
-            <h2 id="why-join-heading">A space built for your growth</h2>
+            <p className="eyebrow">Some Requirements Needed To</p>
+            <h2 id="why-join-heading">Become a member:</h2>
           </div>
 
           <div className="membership-grid">
             {WHY_JOIN.map((item) => (
               <article className="membership-card" key={item.title}>
-                <div className="membership-card__image" aria-hidden="true">
-                  <span>Image placeholder</span>
-                </div>
+                <img
+                  className="membership-card__image"
+                  src={item.image}
+                  alt={item.title}
+                />
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
               </article>
@@ -75,7 +82,7 @@ function BecomeMember() {
         <section className="membership-section" aria-labelledby="how-to-join-heading">
           <div className="section-heading">
             <p className="eyebrow">How to Join</p>
-            <h2 id="how-to-join-heading">Four easy steps</h2>
+            <h2 id="how-to-join-heading">in 4 easy steps</h2>
           </div>
 
           <ol className="steps-list">
@@ -91,7 +98,7 @@ function BecomeMember() {
                 href="https://discord.gg/njSZFTrum"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="step-action primary-btn"
+                className="step-action primary-btn discord-action"
               >
                 Join Discord
               </a>
@@ -108,7 +115,7 @@ function BecomeMember() {
                 href="https://forms.cloud.microsoft/pages/responsepage.aspx?id=szP5EmE9GUuaTWiQId6MyazztYDseWtAjmaLyxlrwFxUMkVUVFpOUTlTSUo2SkRZQ1oxQ1JYREgyNCQlQCN0PWcu&route=shorturl"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="step-action secondary-btn"
+                className="step-action secondary-btn application-action"
               >
                 Apply Now
               </a>
@@ -128,7 +135,7 @@ function BecomeMember() {
                     href={link.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="step-action secondary-btn social-action"
+                    className={`step-action secondary-btn ${link.label.toLowerCase()}-action`}
                   >
                     {link.label}
                   </a>
@@ -143,7 +150,6 @@ function BecomeMember() {
                   <p>Once submitted, we’ll reach out with the next steps.</p>
                 </div>
               </div>
-              <span className="step-action secondary-btn">Next steps</span>
             </li>
           </ol>
         </section>
