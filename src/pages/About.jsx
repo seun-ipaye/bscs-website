@@ -18,8 +18,8 @@ const TEAM_MEMBERS = [
 function About() {
   return (
     <div className="page">
-      <Navbar />
-
+      <Navbar /> 
+    
       <main className="subpage">
         <div className="page-header">
           <p className="eyebrow">About</p>

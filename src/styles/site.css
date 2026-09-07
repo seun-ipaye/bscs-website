@@ -17,6 +17,7 @@
   --border-soft: #e5e5e5;
   --surface: #f7f7f7;
 }
+@import 'tailwindcss';
 
 * {
   box-sizing: border-box;
@@ -587,6 +588,7 @@ a {
   line-height: 1.7;
 }
 
+/* EVENTS HERO */
 .events-grid {
   width: 100%;
   display: grid;
@@ -919,6 +921,7 @@ a {
   background: #f7f7f7;
   border-color: #cfcfcf;
 }
+/* SOCIALS HERO */
 
 /* FOOTER */
 .footer {
