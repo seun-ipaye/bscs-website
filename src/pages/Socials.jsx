@@ -36,7 +36,7 @@ export default function Socials() {
     ];
 
     return (
-        <div className='min-h-screen bg-[#05596] text-white flex flex-col selection:bg-white/20'>
+        <div className='min-h-screen bg-[#005596] text-white flex flex-col selection:bg-white/20'>
             <Navbar />
 
             <main className='flex-1 flex flex-col items-center justify-center px-4 py-16'>
