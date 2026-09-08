@@ -11,7 +11,7 @@ export default function Socials() {
             subtitle: 'Connect & chat with our thriving community',
             url: 'https://discord.gg/sRmS5hKqqQ',
             bgColor: 'bg-[#ea3231] hover:opacity-90',
-            hoverGlow: 'hover:shadow-[0_0_25px_rgba(234,50,49,0.4)]',
+            hoverGlow: 'hover:shadow-[0_0_25px_rgba(255,206,0,0.4)]',
             logo: discordLogo,
             alt: 'Discord Logo',
         },
@@ -20,7 +20,7 @@ export default function Socials() {
             subtitle: 'Stay up to date with our activities',
             url: 'https://www.instagram.com/uwinbscs?utm_source=ig_web_button_share_sheet&igsi=ZDNlZDc0MzIxNw==',
             bgColor: 'bg-[#f1c200] hover:opacity-90',
-            hoverGlow: 'hover:shadow-[0_0_25px_rgba(241,194,0,0.4)]',
+            hoverGlow: 'hover:shadow-[0_0_25px_rgba(255,206,0,0.4)]',
             logo: instagramLogo,
             alt: 'Instagram Logo',
         },
@@ -29,14 +29,14 @@ export default function Socials() {
             subtitle: 'Professional updates and networking',
             url: 'https://www.linkedin.com/company/uwindsor-bscs/posts/?feedView=all',
             bgColor: 'bg-[#216831] hover:opacity-90',
-            hoverGlow: 'hover:shadow-[0_0_25px_rgba(33,104,49,0.4)]',
+            hoverGlow: 'hover:shadow-[0_0_25px_rgba(255,206,0,0.4)]',
             logo: linkedinLogo,
             alt: 'LinkedIn Logo',
         },
     ];
 
     return (
-        <div className='min-h-screen bg-[#0d1526] text-white flex flex-col selection:bg-white/20'>
+        <div className='min-h-screen bg-[#05596] text-white flex flex-col selection:bg-white/20'>
             <Navbar />
 
             <main className='flex-1 flex flex-col items-center justify-center px-4 py-16'>
