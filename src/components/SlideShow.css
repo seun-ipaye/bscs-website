@@ -16,8 +16,7 @@
   border: 1px solid #e5e5e5;
   border-radius: 16px;
   overflow: hidden;
-  transition: opacity 0.3s ease;
-  height: 600px; 
+  height: 600px;
   transition: opacity 0.15s ease-in-out;
   opacity: 1;
 }

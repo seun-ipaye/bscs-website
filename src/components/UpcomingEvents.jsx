@@ -15,7 +15,7 @@ export const EVENTS = [
     date: "2026-09-13", 
     endDate: "2026-10-19",
     title: "BSCS 101: TBD",
-    location: "Unibersity of Windsor",
+    location: "University of Windsor",
     signupUrl: null,
   },
   { 

@@ -64,7 +64,7 @@ function BecomeMember() {
         <section className="membership-section" aria-labelledby="why-join-heading">
           <div className="section-heading">
             <p className="eyebrow">Some Requirements Needed To</p>
-            <h2 id="why-join-heading">Become a member:</h2>
+            <h2 id="why-join-heading">Become a Member:</h2>
           </div>
 
           <div className="membership-grid">
@@ -76,6 +76,7 @@ function BecomeMember() {
                   alt={item.title}
                   width={6000}
                   height={4000}
+                  loading="lazy"
                 />
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>
@@ -87,7 +88,7 @@ function BecomeMember() {
         <section className="membership-section" aria-labelledby="how-to-join-heading">
           <div className="section-heading">
             <p className="eyebrow">How to Join</p>
-            <h2 id="how-to-join-heading">in 4 easy steps</h2>
+            <h2 id="how-to-join-heading">In 4 Easy Steps</h2>
           </div>
 
           <ol className="steps-list">

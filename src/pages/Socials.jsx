@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../components/Navbar';
+import Footer from '../components/Footer';
 import discordLogo from '../assets/discord-logo-trans.png';
 import instagramLogo from '../assets/instagram-logo-trans.png';
 import linkedinLogo from '../assets/linkedin-logo-trans.png';
@@ -57,7 +58,7 @@ export default function Socials() {
                           href={item.url}
                           target='_blank'
                           rel='noopener noreferrer'
-                          className={`group relative w-full p-4 sm:p-5 rounded-xl flex items-center justify-between transition-all duration-300 ease-out transform hover:-translate-y-0.5 hover:translate-x-1 ${item.bgColor} ${item.hoverGlow}`}
+                          className={`group relative w-full p-4 sm:p-5 rounded-xl flex items-center justify-between transition duration-300 ease-out transform hover:-translate-y-0.5 hover:translate-x-1 ${item.bgColor} ${item.hoverGlow}`}
                         >
 
                             <div className='flex items-center gap-4'>
@@ -81,8 +82,8 @@ export default function Socials() {
                                 </div>
                             </div>
 
-                            <div className='opacity-60 transition-all duration-300 group-hover:opacity-100 group-hover:translate-x-1 pr-1'>
-                                <svg className='w-6 h-6 fill-none stroke-current stroke-2' viewBox='0 0 24 24'>
+                            <div className='opacity-60 transition duration-300 group-hover:opacity-100 group-hover:translate-x-1 pr-1'>
+                                <svg aria-hidden='true' className='w-6 h-6 fill-none stroke-current stroke-2' viewBox='0 0 24 24'>
                                     <path strokeLinecap='round' strokeLinejoin='round' d='M8.25 4.5l7.5 7.5-7.5 7.5' />
                                 </svg>
                             </div>
@@ -90,6 +91,8 @@ export default function Socials() {
                     ))}
                 </div>
             </main>
+
+            <Footer />
         </div>
     );
 }

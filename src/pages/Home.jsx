@@ -22,7 +22,7 @@ function Home() {
 
           <div className="hero-buttons">
             <Link to="/about" className="primary-btn">
-              Learn More <ArrowRight size={18} aria-hidden="true" />
+              Learn About BSCS <ArrowRight size={18} aria-hidden="true" />
             </Link>
           </div>
         </div>
@@ -33,6 +33,7 @@ function Home() {
             alt="BSCS students at a community event"
             width={6000}
             height={4000}
+            fetchPriority="high"
           />
         </div>
       </section>
@@ -50,7 +51,7 @@ function Home() {
             We bridge the balance between social and professional growth, creating a space where you can thrive and have fun.
           </p>
           <Link to="/about" className="secondary-btn">
-            Learn More <ArrowRight size={18} aria-hidden="true" />
+            Read Our Story <ArrowRight size={18} aria-hidden="true" />
           </Link>
         </section>
 
@@ -99,13 +100,13 @@ function Home() {
         <section className="involved-section" aria-labelledby="community-heading">
           <div className="involved-content">
             <p className="eyebrow">What are you waiting for?</p>
-            <h2 id="community-heading">Become a member
+            <h2 id="community-heading">Become a Member
             </h2>
             <p>
               Enter our world of growth, fun and opportunities and connect with a community that feels like home.
             </p>
             <Link to="/become-member" className="primary-btn">
-              Become a member <ArrowRight size={18} aria-hidden="true" />
+              Become a Member <ArrowRight size={18} aria-hidden="true" />
             </Link>
           </div>
 
@@ -115,6 +116,7 @@ function Home() {
               alt="BSCS members connecting at a community event"
               width={6000}
               height={4000}
+              loading="lazy"
             />
           </div>
         </section>

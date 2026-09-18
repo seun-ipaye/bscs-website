@@ -11,7 +11,6 @@ const TEAM_MEMBERS = [
   { role: "Head of Technology", name: "Manzi Munyambo", photoPosition: "center 30%", photoWidth: 1869, photoHeight: 2800 },
   { role: "Treasurer", name: "Samuel Obawole", photoPosition: "center 40%", photoWidth: 2880, photoHeight: 5120 },
   { role: "Outreach Lead", name: "Nifemi Koleosho", photoPosition: "center 30%", photoWidth: 2344, photoHeight: 2628 },
-  // { role: "Strategy Lead", name: "Edima Essien", photoPosition: "center 30%" },
   { role: "Secretary", name: "Iyanuoluwa Adegboyega", photoPosition: "center 30%", photoWidth: 2880, photoHeight: 2160 },
   { role: "Head of Marketing and Communication", name: "Ovo Akporeha", photoPosition: "center 20%", photoWidth: 928, photoHeight: 1160 },
 ];
@@ -37,6 +36,7 @@ function About() {
             alt="A BSCS member helping another student during a GitHub workshop"
             width={6000}
             height={4000}
+            loading="lazy"
           />
           <div className="about-hero-card">
             <h2>
@@ -81,7 +81,7 @@ function About() {
 
         <div className="page-header team-header">
           <p className="eyebrow">Team</p>
-          <h1>Founding members</h1>
+          <h1>Founding Members</h1>
           <p>
             The students working behind the scenes to build and grow BSCS.
           </p>
@@ -116,6 +116,7 @@ function TeamCard({ member }) {
           alt={member.name}
           width={member.photoWidth}
           height={member.photoHeight}
+          loading="lazy"
           onLoad={() => setLoaded(true)}
           onError={() => setErrored(true)}
           style={{

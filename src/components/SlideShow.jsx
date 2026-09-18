@@ -67,7 +67,7 @@ export default function EventSlideshow() {
         {/* Photo */}
         <div className="slideshow__photo">
           {slide.image
-            ? <img src={slide.image} alt={slide.title} width={slide.imageWidth} height={slide.imageHeight} />
+            ? <img src={slide.image} alt={slide.title} width={slide.imageWidth} height={slide.imageHeight} loading="lazy" />
             : <span className="slideshow__placeholder">Photo TBA</span>
           }
         </div>
