@@ -6,7 +6,7 @@ import WalkSafePrivacy from "./pages/WalkSafePrivacy";
 import WalkSafeSupport from "./pages/WalkSafeSupport";
 import BecomeMember from "./pages/BecomeMember";
 import Socials from "./pages/Socials";
-import "./styles/site.css";
+import "./styles/global.css";
 
 function App() {
   return (

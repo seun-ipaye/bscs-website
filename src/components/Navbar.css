@@ -1,0 +1,129 @@
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  border-bottom: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(8px);
+}
+
+.navbar-inner {
+  width: 100%;
+  padding: 1.2rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.logo-mark {
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+  color: #444444;
+  transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+  color: var(--gold-deep);
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 2.25rem;
+  height: 2.25rem;
+  padding: 0;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.nav-toggle span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #111111;
+  border-radius: 1px;
+}
+
+/* NAVBAR - DARK (matches hero, stays pinned on scroll) */
+.navbar-transparent {
+  background: var(--blue);
+  border-bottom: none;
+  backdrop-filter: none;
+}
+
+.navbar-transparent .logo,
+.navbar-transparent .nav-links a {
+  color: #ffffff;
+}
+
+.navbar-transparent .nav-links a:hover {
+  color: var(--gold);
+}
+
+.navbar-transparent .nav-toggle span {
+  background: #ffffff;
+}
+
+.navbar-transparent .nav-links.open {
+  background: var(--blue);
+  padding: 0 1.25rem 1rem;
+  border-radius: 0 0 12px 12px;
+}
+
+/* MOBILE */
+@media (max-width: 860px) {
+  .navbar-inner {
+    position: relative;
+    flex-wrap: wrap;
+    padding: 1rem 1.25rem;
+  }
+
+  .nav-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.25rem;
+    margin-top: 1rem;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: 0.65rem 0;
+    border-top: 1px solid #eeeeee;
+  }
+
+  .logo-mark {
+    width: 32px;
+    height: 32px;
+  }
+}

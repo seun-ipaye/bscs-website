@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import "./About.css";
 
 const TEAM_MEMBERS = [
   { role: "Co-President", name: "Ewaoluwa Olakunle", photoPosition: "center 30%" },

@@ -2,6 +2,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import { Link } from "react-router-dom";
 import { ArrowRight, BriefcaseBusiness, CalendarDays, Users } from "lucide-react";
+import "./Home.css";
 
 function Home() {
   return (

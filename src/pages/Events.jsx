@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import UpcomingEvents from "../components/UpcomingEvents";
 import SlideShow from "../components/SlideShow";
 import { EVENTS } from "../components/UpcomingEvents";
+import "./Events.css";
 
 const LINKEDIN_URL = "https://www.linkedin.com/company/uwindsor-bscs/posts/?feedView=all";
 

@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import bscsLogo from "../assets/BSCS-logo-trans.png";
+import "./Navbar.css";
 
 function Navbar({ transparent = false }) {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,0 +1,29 @@
+.footer {
+  border-top: 1px solid var(--line);
+  padding: 1.5rem 2rem;
+  text-align: center;
+  color: var(--grey);
+  font-size: 0.95rem;
+  background: var(--white);
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ink);
+  font-weight: 700;
+}
+
+.footer-brand .logo-mark {
+  width: 30px;
+  height: 34px;
+}
+
+/* MOBILE */
+@media (max-width: 860px) {
+  .footer {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+}
