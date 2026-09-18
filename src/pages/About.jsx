@@ -4,16 +4,16 @@ import Footer from "../components/Footer";
 import "./About.css";
 
 const TEAM_MEMBERS = [
-  { role: "Co-President", name: "Ewaoluwa Olakunle", photoPosition: "center 30%" },
-  { role: "Co-President", name: "Seun Samuel-Ipaye", photoPosition: "center 30%" },
-  { role: "Vice President", name: "Sura Gaafar", photoPosition: "center 50%" },
-  { role: "Events Lead", name: "Adedeji Adeboyejo", photoPosition: "center 30%" },
-  { role: "Head of Technology", name: "Manzi Munyambo", photoPosition: "center 30%" },
-  { role: "Treasurer", name: "Samuel Obawole", photoPosition: "center 40%" },
-  { role: "Outreach Lead", name: "Nifemi Koleosho", photoPosition: "center 30%" },
+  { role: "Co-President", name: "Ewaoluwa Olakunle", photoPosition: "center 30%", photoWidth: 1080, photoHeight: 1350 },
+  { role: "Co-President", name: "Seun Samuel-Ipaye", photoPosition: "center 30%", photoWidth: 6000, photoHeight: 4000 },
+  { role: "Vice President", name: "Sura Gaafar", photoPosition: "center 50%", photoWidth: 928, photoHeight: 1120 },
+  { role: "Events Lead", name: "Adedeji Adeboyejo", photoPosition: "center 30%", photoWidth: 2160, photoHeight: 2880 },
+  { role: "Head of Technology", name: "Manzi Munyambo", photoPosition: "center 30%", photoWidth: 1869, photoHeight: 2800 },
+  { role: "Treasurer", name: "Samuel Obawole", photoPosition: "center 40%", photoWidth: 2880, photoHeight: 5120 },
+  { role: "Outreach Lead", name: "Nifemi Koleosho", photoPosition: "center 30%", photoWidth: 2344, photoHeight: 2628 },
   // { role: "Strategy Lead", name: "Edima Essien", photoPosition: "center 30%" },
-  { role: "Secretary", name: "Iyanuoluwa Adegboyega", photoPosition: "center 30%" },
-  { role: "Head of Marketing and Communication", name: "Ovo Akporeha", photoPosition: "center 20%" },
+  { role: "Secretary", name: "Iyanuoluwa Adegboyega", photoPosition: "center 30%", photoWidth: 2880, photoHeight: 2160 },
+  { role: "Head of Marketing and Communication", name: "Ovo Akporeha", photoPosition: "center 20%", photoWidth: 928, photoHeight: 1160 },
 ];
 
 function About() {
@@ -21,7 +21,7 @@ function About() {
     <div className="page">
       <Navbar /> 
     
-      <main className="subpage">
+      <main id="main-content" tabIndex={-1} className="subpage">
         <div className="page-header">
           <p className="eyebrow">About</p>
           <h1>Who We Are</h1>
@@ -35,6 +35,8 @@ function About() {
           <img
             src="/events/github/IMG_2132.JPG"
             alt="A BSCS member helping another student during a GitHub workshop"
+            width={6000}
+            height={4000}
           />
           <div className="about-hero-card">
             <h2>
@@ -112,6 +114,8 @@ function TeamCard({ member }) {
         <img
           src={photoPath}
           alt={member.name}
+          width={member.photoWidth}
+          height={member.photoHeight}
           onLoad={() => setLoaded(true)}
           onError={() => setErrored(true)}
           style={{

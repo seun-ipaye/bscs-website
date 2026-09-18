@@ -100,3 +100,37 @@
   color: #aaa;
   font-size: 0.85rem;
 }
+
+/* MOBILE */
+@media (max-width: 860px) {
+  .slideshow__card {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .slideshow__photo {
+    min-height: 220px;
+  }
+
+  .slideshow__info {
+    padding: 1.5rem;
+  }
+
+  .slideshow__footer {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0.75rem;
+  }
+
+  .slideshow__btn {
+    order: 1;
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .slideshow__counter {
+    order: 2;
+    width: 100%;
+    text-align: center;
+  }
+}

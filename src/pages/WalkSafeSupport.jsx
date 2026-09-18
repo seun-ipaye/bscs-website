@@ -7,7 +7,7 @@ function WalkSafeSupport() {
     <div className="page">
       <Navbar />
 
-      <main className="subpage">
+      <main id="main-content" tabIndex={-1} className="subpage">
         <div className="page-header">
           <p className="eyebrow">WalkSafe</p>
           <h1>WalkSafe Support</h1>

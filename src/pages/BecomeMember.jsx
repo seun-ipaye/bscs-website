@@ -40,7 +40,7 @@ function BecomeMember() {
     <div className="page">
       <Navbar transparent />
 
-      <main className="subpage become-member-page">
+      <main id="main-content" tabIndex={-1} className="subpage become-member-page">
         <section className="membership-hero">
           <div className="membership-hero__content">
             <h1>
@@ -55,6 +55,8 @@ function BecomeMember() {
               className="membership-hero__visual"
               src="/hero/hero01.JPG"
               alt="BSCS students together"
+              width={6000}
+              height={4000}
             />
           </div>
         </section>
@@ -72,6 +74,8 @@ function BecomeMember() {
                   className="membership-card__image"
                   src={item.image}
                   alt={item.title}
+                  width={6000}
+                  height={4000}
                 />
                 <h3>{item.title}</h3>
                 <p>{item.text}</p>

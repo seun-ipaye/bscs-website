@@ -31,11 +31,13 @@ function Home() {
           <img
             src="/hero/hero01.JPG"
             alt="BSCS students at a community event"
+            width={6000}
+            height={4000}
           />
         </div>
       </section>
 
-      <main>
+      <main id="main-content" tabIndex={-1}>
         <section className="mission-section">
           <p className="eyebrow">About Us</p>
           <h2>Connection that moves with you.</h2>
@@ -111,6 +113,8 @@ function Home() {
             <img
               src="/hero/hero01.JPG"
               alt="BSCS members connecting at a community event"
+              width={6000}
+              height={4000}
             />
           </div>
         </section>

@@ -39,7 +39,7 @@ export default function Socials() {
         <div className='min-h-screen bg-[#0d1526] text-white flex flex-col selection:bg-white/20'>
             <Navbar />
 
-            <main className='flex-1 flex flex-col items-center justify-center px-4 py-16'>
+            <main id='main-content' tabIndex={-1} className='flex-1 flex flex-col items-center justify-center px-4 py-16'>
                 <div className='text-center max-w-lg mb-10'>
                     <span className='inline-block py-1 px-3 rounded-full text-xd font-semibold tracking-wider uppercase bg-white/10 text-gray-300 mb-3 border border-white/10'>
                         We'll be doing great things. Connect with us!
@@ -57,7 +57,7 @@ export default function Socials() {
                           href={item.url}
                           target='_blank'
                           rel='noopener noreferrer'
-                          className={'group relative w-full p-4 sm:p-5 rounded-xl flex items-center justify-between transition-all duration-300 ease-out transform hover:-translate-y-0.5 hover:translate-x-1 ${item.bgColor} ${item.hoverGlow}'}
+                          className={`group relative w-full p-4 sm:p-5 rounded-xl flex items-center justify-between transition-all duration-300 ease-out transform hover:-translate-y-0.5 hover:translate-x-1 ${item.bgColor} ${item.hoverGlow}`}
                         >
 
                             <div className='flex items-center gap-4'>
@@ -65,6 +65,8 @@ export default function Socials() {
                                     <img
                                       src={item.logo}
                                       alt={item.alt}
+                                      width={500}
+                                      height={500}
                                       className='w-full h-full object-contain'
                                     />
                                 </div>
