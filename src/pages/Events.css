@@ -13,14 +13,14 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--line);
   border-radius: 16px;
   padding: 2rem 2.5rem;
   margin: 2rem 0;
 }
 
 .next-event__meta {
-  color: #888;
+  color: var(--grey);
   font-size: 0.95rem;
   margin-top: 0.4rem;
 }

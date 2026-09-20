@@ -21,9 +21,14 @@ function Home() {
           </p>
 
           <div className="hero-buttons">
-            <Link to="/about" className="primary-btn">
-              Learn About BSCS <ArrowRight size={18} aria-hidden="true" />
-            </Link>
+            <a
+              href="https://discord.gg/sRmS5hKqqQ"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="primary-btn"
+            >
+              Join Our Discord <ArrowRight size={18} aria-hidden="true" />
+            </a>
           </div>
         </div>
 

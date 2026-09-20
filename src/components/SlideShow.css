@@ -6,14 +6,14 @@
   font-size: 0.85rem;
   font-weight: 600;
   letter-spacing: 0.08em;
-  color: #555;
+  color: var(--grey);
   margin-bottom: 1rem;
 }
 
 .slideshow__card {
   display: flex;
   gap: 1.5rem;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--line);
   border-radius: 16px;
   overflow: hidden;
   height: 600px;
@@ -28,7 +28,7 @@
 .slideshow__photo {
   flex: 1;
   min-height: 280px;
-  background: #f0f0f0;
+  background: var(--surface);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,7 +44,7 @@
 }
 
 .slideshow__placeholder {
-  color: #bbb;
+  color: var(--grey);
   font-size: 0.9rem;
 }
 
@@ -61,18 +61,18 @@
   font-size: 1.4rem;
   font-weight: 700;
   margin-bottom: 1rem;
-  color: #1a1a1a;
+  color: var(--ink);
 }
 
 .slideshow__date {
   font-size: 0.9rem;
   font-weight: 500;
-  color: #888;
+  color: var(--grey);
   margin-bottom: 1rem;
 }
 
 .slideshow__description {
-  color: #555;
+  color: var(--grey);
   line-height: 1.7;
   font-size: 0.95rem;
 }
@@ -86,8 +86,8 @@
 
 .slideshow__btn {
   padding: 0.55rem 1.2rem;
-  background: #1a1a1a;
-  color: white;
+  background: var(--navy);
+  color: var(--cream);
   border: none;
   border-radius: 8px;
   cursor: pointer;
@@ -96,7 +96,7 @@
 }
 
 .slideshow__counter {
-  color: #aaa;
+  color: var(--grey);
   font-size: 0.85rem;
 }
 

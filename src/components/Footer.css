@@ -1,23 +1,41 @@
 .footer {
-  border-top: 1px solid var(--line);
-  padding: 1.5rem 2rem;
+  padding: 3rem 2rem;
   text-align: center;
-  color: var(--grey);
-  font-size: 0.95rem;
-  background: var(--white);
+  color: var(--cream);
+  font-size: 1rem;
+  background: var(--navy);
 }
 
-.footer-brand {
-  display: inline-flex;
+.footer p {
+  margin: 0;
+}
+
+.footer-socials {
+  list-style: none;
+  margin: 0 0 2rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.footer-socials a {
+  display: flex;
   align-items: center;
-  gap: 0.5rem;
-  color: var(--ink);
-  font-weight: 700;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--cream);
+  transition: color 0.2s ease;
 }
 
-.footer-brand .logo-mark {
-  width: 30px;
-  height: 34px;
+.footer-socials a:hover {
+  color: var(--accent);
+}
+
+.footer-socials svg {
+  width: 28px;
+  height: 28px;
 }
 
 /* MOBILE */

@@ -22,7 +22,7 @@
 }
 
 .become-member-page h1 span {
-  color: var(--blue);
+  color: var(--accent);
 }
 
 .membership-hero__content {
@@ -42,7 +42,7 @@
   display: block;
   width: 100%;
   min-height: 220px;
-  border: 1px solid #e7e7e7;
+  border: 1px solid var(--line);
   background: var(--surface);
   font-weight: 600;
   border-radius: 20px;
@@ -147,8 +147,8 @@
   width: 2.25rem;
   height: 2.25rem;
   border-radius: 50%;
-  background: #0d1526;
-  color: #ffffff;
+  background: var(--navy);
+  color: var(--cream);
   font-weight: 700;
 }
 
@@ -180,14 +180,14 @@
 }
 
 .become-member-page .step-action.application-action {
-  border-color: var(--black);
-  background: var(--black);
-  color: #ffffff;
+  border-color: var(--navy);
+  background: var(--navy);
+  color: var(--cream);
 }
 
 .become-member-page .step-action.application-action:hover {
-  border-color: #000000;
-  background: #000000;
+  border-color: var(--navy-deep);
+  background: var(--navy-deep);
 }
 
 .become-member-page .step-action.instagram-action {
@@ -202,14 +202,14 @@
 }
 
 .become-member-page .step-action.linkedin-action {
-  border-color: var(--blue);
-  background: var(--blue);
-  color: #ffffff;
+  border-color: var(--navy);
+  background: var(--navy);
+  color: var(--cream);
 }
 
 .become-member-page .step-action.linkedin-action:hover {
-  border-color: #003c6b;
-  background: #003c6b;
+  border-color: var(--navy-deep);
+  background: var(--navy-deep);
 }
 
 /* MOBILE */

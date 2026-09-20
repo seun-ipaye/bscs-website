@@ -17,7 +17,7 @@
 }
 
 .hero h1 span {
-  color: var(--blue);
+  color: var(--accent);
 }
 
 .hero-description {
@@ -36,7 +36,7 @@
 }
 
 .hero-image {
-  background: linear-gradient(150deg, #005596, #003c6b);
+  background: linear-gradient(150deg, var(--navy), var(--navy-deep));
   border: 0;
   border-radius: 24px;
   overflow: hidden;
@@ -54,7 +54,7 @@
 }
 
 .hero-dark .eyebrow {
-  color: var(--blue);
+  color: var(--navy);
 }
 
 .hero-dark h1 {
@@ -66,12 +66,12 @@
 }
 
 .hero-dark .primary-btn {
-  background: var(--gold);
-  color: var(--ink);
+  background: var(--accent);
+  color: var(--navy);
 }
 
 .hero-dark .primary-btn:hover {
-  background: var(--gold-deep);
+  background: var(--accent-hover);
 }
 
 .home-page {
@@ -86,26 +86,26 @@
 
 .home-page .eyebrow {
   text-transform: none;
-  color: var(--blue);
+  color: var(--navy);
 }
 
 .home-page .primary-btn {
-  background: var(--gold);
-  color: var(--ink);
+  background: var(--accent);
+  color: var(--navy);
 }
 
 .home-page .primary-btn:hover {
-  background: var(--gold-deep);
+  background: var(--accent-hover);
 }
 
 .home-page .secondary-btn {
-  border-color: var(--line);
-  color: var(--ink);
-  background: var(--bg);
+  border-color: var(--navy);
+  color: var(--navy);
+  background: transparent;
 }
 
 .home-page .secondary-btn:hover {
-  background: var(--blue-soft);
+  background: var(--white);
 }
 
 /* HOMEPAGE - MISSION */
@@ -143,7 +143,7 @@
   max-width: 1180px;
   margin: 0 auto 7rem;
   border-radius: 28px;
-  background: linear-gradient(150deg, #005596, #003c6b);
+  background: linear-gradient(150deg, var(--navy), var(--navy-deep));
   padding: 4rem;
   display: grid;
   grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
@@ -167,11 +167,11 @@
   padding: 1.5rem;
   border: 1px solid var(--line);
   border-radius: 20px;
-  background: var(--cream);
+  background: var(--white);
 }
 
 .involved-item:nth-child(2) {
-  background: var(--blue-soft);
+  background: var(--surface);
 }
 
 .involved-icon {
@@ -181,7 +181,7 @@
   height: 44px;
   flex: 0 0 auto;
   border-radius: 12px;
-  color: var(--blue);
+  color: var(--accent);
   background: var(--bg);
 }
 
@@ -201,7 +201,7 @@
 .involved-image {
   border-radius: 20px;
   min-height: 300px;
-  background: linear-gradient(150deg, #005596, #003c6b);
+  background: linear-gradient(150deg, var(--navy), var(--navy-deep));
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -229,7 +229,7 @@
 }
 
 .involved-section .eyebrow {
-  color: var(--gold);
+  color: var(--accent);
 }
 
 /* MOBILE */
@@ -259,7 +259,7 @@
   }
 
   .home-page .hero-dark {
-    background: var(--blue);
+    background: var(--navy);
   }
 
   .home-page .hero-dark .hero-text {
@@ -282,11 +282,11 @@
   .home-page .hero-dark .eyebrow,
   .home-page .hero-dark h1,
   .home-page .hero-dark .hero-description {
-    color: var(--white);
+    color: var(--cream);
   }
 
   .home-page .hero-dark h1 span {
-    color: var(--gold);
+    color: var(--accent);
   }
 
   .feature-section {

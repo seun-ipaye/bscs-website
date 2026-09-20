@@ -5,8 +5,8 @@
   z-index: 2000;
   padding: 0.75rem 1.25rem;
   border-radius: 0 0 8px 8px;
-  background: var(--blue);
-  color: #ffffff;
+  background: var(--accent);
+  color: var(--navy);
   font-weight: 600;
   transition: top 0.2s ease;
 }
@@ -20,9 +20,7 @@
   top: 0;
   z-index: 1000;
   width: 100%;
-  border-bottom: 1px solid var(--line);
-  background: rgba(255, 255, 255, 0.96);
-  backdrop-filter: blur(8px);
+  background: var(--navy);
 }
 
 .navbar-inner {
@@ -40,12 +38,17 @@
   font-size: 1.1rem;
   font-weight: 700;
   letter-spacing: 0.04em;
+  color: var(--cream);
+  padding: 4px;
+  border-radius: 8px;
+  background: var(--cream);
 }
 
 .logo-mark {
   width: 38px;
   height: 38px;
   flex: 0 0 auto;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -55,12 +58,12 @@
 
 .nav-links a {
   font-size: 0.95rem;
-  color: #444444;
+  color: var(--cream);
   transition: color 0.2s ease;
 }
 
 .nav-links a:hover {
-  color: var(--gold-deep);
+  color: var(--accent);
 }
 
 .nav-toggle {
@@ -80,34 +83,8 @@
   display: block;
   width: 100%;
   height: 2px;
-  background: #111111;
+  background: var(--cream);
   border-radius: 1px;
-}
-
-/* NAVBAR - DARK (matches hero, stays pinned on scroll) */
-.navbar-transparent {
-  background: var(--blue);
-  border-bottom: none;
-  backdrop-filter: none;
-}
-
-.navbar-transparent .logo,
-.navbar-transparent .nav-links a {
-  color: #ffffff;
-}
-
-.navbar-transparent .nav-links a:hover {
-  color: var(--gold);
-}
-
-.navbar-transparent .nav-toggle span {
-  background: #ffffff;
-}
-
-.navbar-transparent .nav-links.open {
-  background: var(--blue);
-  padding: 0 1.25rem 1rem;
-  border-radius: 0 0 12px 12px;
 }
 
 /* MOBILE */
@@ -136,7 +113,7 @@
 
   .nav-links a {
     padding: 0.65rem 0;
-    border-top: 1px solid #eeeeee;
+    border-top: 1px solid rgba(253, 244, 228, 0.18);
   }
 
   .logo-mark {

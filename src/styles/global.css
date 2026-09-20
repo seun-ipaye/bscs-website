@@ -1,21 +1,23 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap");
 
 :root {
-  --blue: #005596;
-  --gold: #FFCE00;
-  --gold-deep: #E0B400;
-  --grey: #58595B;
-  --ink: #222325;
-  --bg: #FFFFFF;
-  --blue-soft: #E8F1F8;
-  --cream: #FBFAF7;
-  --line: #ECECEC;
+  /* Brand palette */
+  --cream: #fdf4e4; /* main */
+  --navy: #001f4a; /* secondary */
+  --accent: #ef4d30; /* accent */
+
+  /* Derived from the palette */
+  --navy-deep: #00122d;
+  --accent-hover: #f26a50;
+  --bg: var(--cream);
+  --ink: var(--navy);
+  --grey: #46536b;
+  --text-muted: #46536b;
+  --line: #e6d9c2;
+  --border: #e6d9c2;
+  --border-soft: #e6d9c2;
+  --surface: #f7ecd6;
   --white: #ffffff;
-  --black: #111111;
-  --text-muted: #555555;
-  --border: #e8e8e8;
-  --border-soft: #e5e5e5;
-  --surface: #f7f7f7;
 }
 @import 'tailwindcss';
 
@@ -58,7 +60,7 @@ button {
 }
 
 :focus-visible {
-  outline: 3px solid var(--gold);
+  outline: 3px solid var(--accent);
   outline-offset: 4px;
 }
 
@@ -74,7 +76,7 @@ button {
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #666666;
+  color: var(--grey);
   margin-bottom: 1rem;
 }
 
@@ -109,22 +111,22 @@ button {
 }
 
 .primary-btn {
-  background: var(--black);
-  color: var(--white);
+  background: var(--accent);
+  color: var(--navy);
 }
 
 .primary-btn:hover {
-  background: #000000;
+  background: var(--accent-hover);
 }
 
 .secondary-btn {
-  border: 1px solid #d8d8d8;
-  color: var(--black);
-  background: var(--white);
+  border: 1px solid var(--navy);
+  color: var(--navy);
+  background: transparent;
 }
 
 .secondary-btn:hover {
-  background: #f6f6f6;
+  background: var(--white);
 }
 
 /* SHARED CARDS (used by About's .content-block / .team-card; .preview-card / .info-card are currently unused) */
@@ -153,7 +155,7 @@ button {
 .content-block p,
 .team-card p {
   margin: 0;
-  color: #5a5a5a;
+  color: var(--grey);
   line-height: 1.7;
 }
 
@@ -171,14 +173,14 @@ button {
 /* LEGAL / POLICY (WalkSafePrivacy, WalkSafeSupport) */
 .legal-content {
   max-width: 760px;
-  color: #333333;
+  color: var(--ink);
   line-height: 1.7;
 }
 
 .legal-content h2 {
   margin: 2.5rem 0 1rem;
   font-size: 1.4rem;
-  color: #111111;
+  color: var(--ink);
 }
 
 .legal-content h2:first-child {
