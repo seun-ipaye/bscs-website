@@ -4,33 +4,19 @@ import "./UpcomingEvents.css";
 // For multi-day events: set both date and endDate
 // signupUrl: add when available, null if not yet
 export const EVENTS = [
-  { 
-    date: "2026-09-10", 
-    endDate: "2026-09-11",
-    title: "Fall Welcome Week Meetup", 
-    location: "University of Windsor",
+  {
+    date: "2026-10-29",
+    endDate: null,
+    title: "Jeopardy Night",
+    location: "Toldo 203",
     signupUrl: null,
   },
   { 
-    date: "2026-09-13", 
-    endDate: "2026-10-19",
-    title: "BSCS 101: TBD",
-    location: "University of Windsor",
-    signupUrl: null,
-  },
-  { 
-    date: "2026-09-20", 
-    endDate: "2026-09-26",
-    title: "Drop-in Hangout",
-    location: "University of Windsor",
-    signupUrl: null,
-  },
-  { 
-    date: "2026-09-27", 
-    endDate: "2026-10-03",
-    title: "Trivia night",
-    location: "University of Windsor",
-    signupUrl: null,
+    date: "2026-11-19", 
+    endDate: "2026-11-20",
+    title: "BFUTR trip",
+    location: "Missauaga, ON",
+    signupUrl: "https://forms.cloud.microsoft/pages/responsepage.aspx?id=szP5EmE9GUuaTWiQId6MyVrAkMkKnZxGq4UUXiaFRlJUMllKNjJWNEZVUk0wT1NETE1NTjZSNENRVy4u&route=shorturl",
   },
 ];
 
@@ -76,7 +62,7 @@ export default function UpcomingEvents() {
               ? `${startDay}`
               : sameMonth
               ? `${startDay}–${endDay}`
-              : `${startDay}–${endDay}`;
+              : `${startDay}–${endMonth} ${endDay}`;
 
             return (
               <div key={i} className="upcoming-events__item">
